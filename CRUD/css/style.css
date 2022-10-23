@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body{
+    padding: 30px;
+    font-family: Arial;
+    background: #ddd;
+}
+
+#root{
+    padding: 30px;
+    background: #fff;
+    border-radius: 5px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#root h1,p{
+    color: rgb(158, 153, 153);
+    margin: 10px;
+    text-align: center;
+}
+
+#root #app-form #screenBlock{
+    display: flex;
+    margin-bottom: 24px;
+}
+
+#root #app-form #screenBlock input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0px 0px 5px;
+    width: 100%;
+}
+
+#root #app-form #screenBlock #screenAddBtn{
+    background: #1a91d2;
+    border-radius: 0px 5px 5px 0px;
+    padding: 0px 8px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+}
+
+#root #listsBlock .listsBlockItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+#root #listsBlock .listsBlockItem .listsBlockItemContent span{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#root #listsBlock .listsBlockItem .listsBlockItemContent input{
+    border: 1px solid transparent;
+    padding: 7px 9px;
+    border-radius: 5px;
+}
+
+#root #listsBlock .listsBlockItem .listsBlockItemContent input.edit{
+    border-color: #ccc;
+}
+
+#root #listsBlock .listsBlockItem .buttons .deleteBtn, .editBtn, .saveBtn, .doneBtn{
+	border: 1px solid;
+    cursor: pointer;
+    border-radius: 4px;
+    height: 30px;
+    width: 50px;
+}
+
+#root #listsBlock .listsBlockItem .buttons .deleteBtn{
+    background: yellow;
+}
+
+#root #listsBlock .listsBlockItem .buttons .editBtn{
+    background:#4caadd;
+}
+
+#root #listsBlock .listsBlockItem .buttons .saveBtn{
+    background: rgba(7, 66, 84, 0.378);
+    display: none;
+}
+
+#root #listsBlock .listsBlockItem .buttons .doneBtn{
+    background: rgba(56, 181, 56, 0.784);
+}
+button:hover{
+    opacity: 0.8;
+}
